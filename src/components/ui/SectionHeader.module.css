@@ -34,12 +34,11 @@
 }
 
 .highlight {
-  font-style: italic;
-  color: var(--cyan-muted);
+  color: var(--cream);
 }
 
 .dot {
-  color: var(--orange);
+  color: var(--cream);
 }
 
 .description {
