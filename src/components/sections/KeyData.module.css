@@ -1,0 +1,74 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+  margin-bottom: 64px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid rgba(0, 165, 207, 0.1);
+}
+
+.stat {
+  position: relative;
+}
+
+.value {
+  font-family: var(--font-display), serif;
+  font-size: clamp(32px, 4vw, 48px);
+  color: var(--cream);
+  letter-spacing: -1.5px;
+  line-height: 1.0;
+  margin-bottom: 12px;
+}
+
+.affix {
+  font-size: 0.55em;
+  color: var(--cyan);
+  opacity: 0.8;
+}
+
+.label {
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--cool-gray);
+  line-height: 1.4;
+}
+
+/* Callout */
+.callout {
+  border-left: 2px solid var(--orange);
+  background: rgba(255, 111, 60, 0.06);
+  padding: 24px 28px;
+}
+
+.calloutLabel {
+  font-family: var(--font-mono), monospace;
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 8px;
+}
+
+.calloutText {
+  font-family: var(--font-body), sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--cream);
+  line-height: 1.6;
+  max-width: 640px;
+}
+
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

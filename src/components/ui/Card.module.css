@@ -1,0 +1,25 @@
+.card {
+  background: var(--card-surface);
+  border: 1px solid var(--card-border);
+  padding: 44px;
+  position: relative;
+  transition: border-color 0.2s ease;
+}
+
+.card:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.cyan {
+  border-top: 2px solid var(--cyan);
+}
+
+.orange {
+  border-top: 2px solid var(--orange);
+}
+
+@media (max-width: 960px) {
+  .card {
+    padding: 28px;
+  }
+}

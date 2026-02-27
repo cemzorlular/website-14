@@ -1,35 +1,143 @@
+/* ============================================
+   ER-KIM DESIGN SYSTEM
+   ============================================ */
+
 :root {
   --background: #0a1828;
   --foreground: #ffffff;
 }
 
+  /* Backgrounds */
+  --ink: #0A0F1C;
+  --navy: #001F54;
+  --deep: #111827;
+  --midnight: #050A14;
+  --card-surface: #1A2236;
+  --card-border: rgba(255, 255, 255, 0.06);
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  /* Interactive */
+  --cyan: #00A5CF;
+  --cyan-bright: #2ECBF6;
+  --cyan-muted: #1A7A99;
+  --cyan-faint: rgba(0, 165, 207, 0.08);
+
+  /* Accent */
+  --orange: #FF6F3C;
+  --orange-glow: #FF8F60;
+
+  /* Text */
+  --cream: #FAF7F2;
+  --body-text: #B0B8C4;
+  --cool-gray: #8B95A3;
+  --cool-light: #C8CDD4;
+
+  /* Error */
+  --error: #CC4444;
+
+  /* Spacing (8px grid) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-8: 48px;
+  --space-10: 64px;
+  --space-12: 80px;
+  --space-16: 120px;
+
+  /* Layout */
+  --nav-height: 64px;
+  --max-width: 1200px;
+  --reading-width: 800px;
+  --body-width: 640px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+body {
+  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--ink);
+  color: var(--cream);
+  line-height: 1.6;
 }
 
+/* Focus — WCAG AA */
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Selection */
+::selection {
+  background: var(--cyan);
+  color: var(--midnight);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--midnight);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--card-surface);
+  border-radius: 4px;
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Links */
 a {
-  color: inherit;
+  color: var(--cyan);
   text-decoration: none;
+  transition: color 0.15s ease;
 }
 
 html {
   color-scheme: dark;
+a:hover {
+  color: var(--cyan-bright);
 }

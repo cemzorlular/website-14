@@ -1,0 +1,32 @@
+.section {
+  padding: 120px 80px;
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.midnight {
+  background: var(--midnight);
+}
+
+.ink {
+  background: var(--ink);
+}
+
+.deep {
+  background: var(--deep);
+}
+
+@media (max-width: 960px) {
+  .section {
+    padding: 64px 24px;
+  }
+}

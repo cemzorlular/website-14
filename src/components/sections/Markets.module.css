@@ -1,0 +1,43 @@
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+  margin-bottom: 16px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(0, 165, 207, 0.1);
+}
+
+.source {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--cool-gray);
+  opacity: 0.6;
+  margin-bottom: 64px;
+  margin-top: 12px;
+}
+
+.tableLabel {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(0, 165, 207, 0.12);
+}
+
+@media (max-width: 960px) {
+  .kpiGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .kpiGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

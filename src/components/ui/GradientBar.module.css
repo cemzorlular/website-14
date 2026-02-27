@@ -1,0 +1,5 @@
+.bar {
+  height: 3px;
+  background: linear-gradient(90deg, var(--navy), var(--cyan), var(--orange));
+  width: 100%;
+}
