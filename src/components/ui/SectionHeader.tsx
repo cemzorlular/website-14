@@ -25,7 +25,7 @@ export function SectionHeader({
           {titleHighlight && (
             <>
               <br />
-              <em className={styles.highlight}>{titleHighlight}</em>
+              <span className={styles.highlight}>{titleHighlight}</span>
             </>
           )}
           <span className={styles.dot}>.</span>
