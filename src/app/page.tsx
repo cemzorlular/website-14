@@ -1,3 +1,4 @@
+import GeographicReach from './components/GeographicReach';
 import { SkipToContent } from '@/components/layout/SkipToContent';
 import { Navigation } from '@/components/layout/Navigation';
 import { Section } from '@/components/layout/Section';
@@ -12,6 +13,9 @@ import { Contact } from '@/components/sections/Contact';
 
 export default function HomePage() {
   return (
+    <main>
+      <GeographicReach />
+    </main>
     <>
       <SkipToContent />
       <Navigation />

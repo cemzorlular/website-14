@@ -3,6 +3,10 @@
    ============================================ */
 
 :root {
+  --background: #0a1828;
+  --foreground: #ffffff;
+}
+
   /* Backgrounds */
   --ink: #0A0F1C;
   --navy: #001F54;
@@ -62,6 +66,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
 body {
@@ -131,6 +136,8 @@ a {
   transition: color 0.15s ease;
 }
 
+html {
+  color-scheme: dark;
 a:hover {
   color: var(--cyan-bright);
 }
