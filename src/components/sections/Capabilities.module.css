@@ -1,0 +1,37 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.index {
+  font-family: var(--font-display), serif;
+  font-size: 36px;
+  color: var(--cyan);
+  opacity: 0.25;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-family: var(--font-body), sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--cream);
+  margin-bottom: 12px;
+  letter-spacing: -0.3px;
+}
+
+.body {
+  font-family: var(--font-body), sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--body-text);
+  font-weight: 300;
+}
+
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
