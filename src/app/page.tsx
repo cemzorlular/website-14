@@ -1,21 +1,9 @@
-import GeographicReach from './components/GeographicReach';
-import { SkipToContent } from '@/components/layout/SkipToContent';
-import { Navigation } from '@/components/layout/Navigation';
-import { Section } from '@/components/layout/Section';
-import { Footer } from '@/components/layout/Footer';
-import { GradientBar } from '@/components/ui/GradientBar';
-import { Hero } from '@/components/sections/Hero';
-import { About } from '@/components/sections/About';
-import { Markets } from '@/components/sections/Markets';
-import { Capabilities } from '@/components/sections/Capabilities';
-import { KeyData } from '@/components/sections/KeyData';
-import { Contact } from '@/components/sections/Contact';
+import { SkipToContent, Navigation, Section, Footer } from '@/components/layout';
+import { GradientBar } from '@/components/ui';
+import { Hero, About, Markets, GeographicReach, Capabilities, KeyData, Contact } from '@/components/sections';
 
 export default function HomePage() {
   return (
-    <main>
-      <GeographicReach />
-    </main>
     <>
       <SkipToContent />
       <Navigation />
@@ -33,6 +21,8 @@ export default function HomePage() {
         <Section id="markets" background="deep">
           <Markets />
         </Section>
+
+        <GeographicReach />
 
         <Section id="capabilities" background="ink">
           <Capabilities />

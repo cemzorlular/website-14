@@ -34,7 +34,7 @@ interface TooltipState {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type LeafletMap = any;
 
-export default function GeographicReach() {
+export function GeographicReach() {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstance = useRef<LeafletMap>(null);
   const [tooltip, setTooltip] = useState<TooltipState>({
